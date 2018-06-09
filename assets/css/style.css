@@ -142,7 +142,8 @@ section {
     background-size: cover;
     margin-top: 8px;
     margin-bottom: 25px;
-    border: solid 2px rgb(15, 15, 19)
+    box-shadow: 3px 3px 12px rgb(0,0,0,0.8);
+    /* border: solid 2px rgb(15, 15, 19) */
 }
 
 .work img {
@@ -228,7 +229,9 @@ section {
 }
 
 #contact {
-    background-image: url("../images/blueSea2.jpg");
+    background-color: whitesmoke;
+
+    /* background-image: url("../images/blueSea2.jpg");
     background-position: center;
     background-repeat: no-repeat; 
     background-size: contain, auto;
@@ -236,13 +239,16 @@ section {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover; 
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-bottom: 50px;
+    background-size: cover;  */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 70px;
+    /* border-top: solid 1px rgb(15, 15, 19);
+    border-bottom: solid 1px rgb(15, 15, 19) */
+    box-shadow: 3px 1px 12px rgb(0,0,0,0.8);
 }
 
-#contentWrapper {
+/* #contentWrapper {
     background-image: url("../images/white_sands.jpg");
     background-position: center;
     background-repeat: no-repeat; 
@@ -253,7 +259,7 @@ section {
     -o-background-size: cover;
     background-size: cover;
     padding: 20px;
-}
+} */
 
 .contactContent {
     color: rgb(15, 15, 19); 
