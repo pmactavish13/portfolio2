@@ -8,6 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Paula MacTavish Portfolio</title>
 
+
+
+    <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png">
+
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
     <link href="https://fonts.googleapis.com/css?family=Song+Myung" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -32,7 +36,9 @@
 
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-
+            <div>
+                <img src="assets/images/logoBwC.png" class="img-fluid" id="myLogo" alt="my logo">
+            </div>
             <div id="logoToShowHide" class="BeforeScroll" style="padding-left:15px;
             font-size: 24px">
                 Paula MacTavish
@@ -48,10 +54,10 @@
                 <ul class="navbar-nav text-uppercase ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link js-scroll-trigger" href="#top" style="margin-bottom: -14px">
-                                <div id="homeToShowHide" class="BeforeScroll" style="margin-bottom: -10px">
-                                       Home &#160;
-                                    </div>
-                            <span>  &#160; </span>
+                            <div id="homeToShowHide" class="BeforeScroll" style="margin-bottom: -10px">
+                                Home &#160;
+                            </div>
+                            <span> &#160; </span>
                         </a>
                     </li>
 
@@ -60,13 +66,11 @@
                             <span> &#160 &#160 </span>
                         </a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio
-                            <span> &#160 &#160</span>
+                            <span> &#160; &#160</span>
                         </a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#contact">Contact
                             <span> &#160</span>
@@ -83,8 +87,8 @@
             <div class="row intro-text">
                 <div class="col-md-4"></div>
                 <div class="col-md-4 intro-lead-in">
-                    <h1>Paula MacTavish</h1>
-                    <h2>Full Stack Web Developer</h2>
+                    <h1 id="typewriter1">Paula MacTavish</h1>
+                    <h2 id="typewriter2"></h2>
                 </div>
             </div>
         </div>
@@ -92,221 +96,361 @@
 
 
     <section>
+        <!-- About Me Section -->
+        <div class="container-fluid" id="about">
+            <header>
+                <h3>Developer &#8226; Explorer &#8226; Dreamer</h3>
+                <!-- <h3 class="meText">A Whole Page About Me</h3> -->
+            </header>
+            <!-- main content body-->
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-1"></div>
+
+                    <div class="col-md-7">
+
+                        <p class="me-text">I am a full stack web developer currently based in Philadelphia, Pennsylvania. I enjoy reading, traveling
+                            to new places and the knowledge and perspective that these activities give me in life.</p>
+                        <p class="me-text">I love puzzles and consider myself a 'forever student' ... which is why I absolutely love coding.
+                            With technology constantly changing and evolving, there is always something new and exciting
+                            to learn and incorporate into a project. With every line of code, I strive to make the UI and
+                            UX beautiful and functional.</p>
+                        <p class="me-text">When I am not coding, exploring or dreaming up crazy new things to try, you can usually find me trying
+                            to twist myself into asanas and sweating profusely in hot yoga.
+                        </p>
+                        <p class="me-text">If there is any way I can help with your project, or if you would just like to know more, please
+                            <a href="#contact">contact me</a>!</p>
+
+                    </div>
+                    <div class="col-md-3" id="about-image">
+                        <!-- <img id="about-image" src="assets/images/yoga.jpg" alt="Paula MacTavish"> -->
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </div>
+
         <div class="container" id="portfolio">
             <header>
-                <h4>Portfolio</h4>
+                <h3>Portfolio</h3>
             </header>
             <!-- main content body-->
             <div id="workSample">
                 <div class="row">
                     <div class "col-md-1"></div>
                     <div class "col-md-10">
-                        <div class="row" style="margin-bottom: 20px">
+                        <div class="row portfolio-row">
 
-                            <div class="col-md-3 work portfolio-item">
+                            <div class="col-md-3 work portfolio-item ">
                                 <div class="portfolio-link" data-toggle="modal">
-                                    <div class="portfolio-hover" style="border: solid 2px rgba(50, 139, 247)">
+                                    <div class="portfolio-hover " style="border: solid 2px rgba(50, 139, 247)">
+                                        <p class="tools">Sequelize / Express / Handlebars
+                                            <br>Passport / Bcrypt /Bootstrap 4</p>
                                         <div class="portfolio-hover-content">
-                                            <a href="https://vast-waters-30229.herokuapp.com/">
-                                                <h5>Deployed App</h5>
+                                            <a target="_blank" href="https://vast-waters-30229.herokuapp.com/">
+                                                <h5 class="link">Deployed App</h5>
                                             </a>
-                                            <a href="https://github.com/pmactavish13/volunteer">
-                                                <h5>GitHub Repo</h5>
+                                            <a target="_blank" href="https://github.com/pmactavish13/volunteer">
+                                                <h5 class="link">GitHub Repo</h5>
                                             </a>
                                         </div>
                                     </div>
                                     <img src="assets/images/Philly.jpg" class="img-fluid sample" alt="Volunteer Philadelphia">
                                 </div>
                                 <div class="portfolio-caption">
-                                    <h3>Volunteer Philadelphia</h3>
+                                    <h4>Volunteer Philadelphia</h4>
                                 </div>
                             </div>
 
                             <div class="col-md-3 work portfolio-item">
                                 <div class="portfolio-link" data-toggle="modal">
                                     <div class="portfolio-hover" style="border: solid 2px rgba(50, 139, 247)">
+                                        <p class="tools">Sequelize / Express / Handlebars
+                                            <br>HTML /Bootstrap 4 / CSS</p>
                                         <div class="portfolio-hover-content">
-                                            <a href="https://ancient-lake-67242.herokuapp.com/">
-                                                <h5>Deployed App</h5>
+                                            <a target="_blank" href="https://ancient-lake-67242.herokuapp.com/">
+                                                <h5 class="link">Deployed App</h5>
                                             </a>
-                                            <a href="https://github.com/pmactavish13/sequelizedBurger">
-                                                <h5>GitHub Repo</h5>
+                                            <a target="_blank" href="https://github.com/pmactavish13/sequelizedBurger">
+                                                <h5 class="link">GitHub Repo</h5>
                                             </a>
                                         </div>
                                     </div>
                                     <img src="assets/images/sequelizedBurger.jpg" class="img-fluid sample" alt="Sequeize Burger">
                                 </div>
                                 <div class="portfolio-caption">
-                                    <h3>Sequelize Burger</h3>
+                                    <h4>Sequelize Burger</h4>
                                 </div>
                             </div>
 
                             <div class="col-md-3 work portfolio-item">
                                 <div class="portfolio-link" data-toggle="modal">
                                     <div class="portfolio-hover" style="border: solid 2px rgba(50, 139, 247)">
+                                        <p class="tools">Express / Body-Parsser / Path
+                                            <br>HTML / Bootstrap / CSS</p>
                                         <div class="portfolio-hover-content">
-                                            <a href="https://secure-fortress-56113.herokuapp.com/">
-                                                <h5>Deployed App</h5>
+                                            <a target="_blank" href="https://secure-fortress-56113.herokuapp.com/">
+                                                <h5 class="link">Deployed App</h5>
                                             </a>
-                                            <a href="https://github.com/pmactavish13/Friend-Finder">
-                                                <h5>GitHub Repo</h5>
+                                            <a target="_blank" href="https://github.com/pmactavish13/Friend-Finder">
+                                                <h5 class="link">GitHub Repo</h5>
                                             </a>
                                         </div>
                                     </div>
                                     <img src="assets/images/Friend-Finder.jpg" class="img-fluid sample" alt="Friend Finder">
                                 </div>
                                 <div class="portfolio-caption">
-                                    <h3>Friend Finder</h3>
+                                    <h4>Friend Finder</h4>
                                 </div>
                             </div>
 
                             <div class="col-md-3 work portfolio-item">
                                 <div class="portfolio-link" data-toggle="modal">
                                     <div class="portfolio-hover" style="border: solid 2px rgba(50, 139, 247)">
+                                        <p class="tools">Firebase / Moment.js / CSS
+                                            <br>HTML / Bootstrap 3</p>
                                         <div class="portfolio-hover-content">
-                                            <a href="https://pmactavish13.github.io/Train-Scheduler/">
-                                                <h5>Deployed App</h5>
+                                            <a target="_blank" href="https://pmactavish13.github.io/Train-Scheduler/">
+                                                <h5 class="link">Deployed App</h5>
                                             </a>
-                                            <a href="https://github.com/pmactavish13/Train-Scheduler">
-                                                <h5>GitHub Repo</h5>
+                                            <a target="_blank" href="https://github.com/pmactavish13/Train-Scheduler">
+                                                <h5 class="link">GitHub Repo</h5>
                                             </a>
                                         </div>
                                     </div>
                                     <img src="assets/images/train.jpg" class="img-fluid sample" alt="Train Scheduler">
                                 </div>
                                 <div class="portfolio-caption">
-                                    <h3>Train Scheduler</h3>
+                                    <h4>Train Scheduler</h4>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-1"></div>
-                </div>
 
-                <div class="row">
-                    <div class "col-md-1"></div>
-                    <div class "col-md-10">
-                        <div class="row">
+
+                        <div class="row portfolio-row">
 
                             <div class="col-md-3 work portfolio-item">
                                 <div class="portfolio-link" data-toggle="modal">
                                     <div class="portfolio-hover" style="border: solid 2px rgba(50, 139, 247)">
+                                        <p class="tools">MySQL / Node.js / Inquirer
+                                            <br>CLI-Table / Colors</p>
                                         <div class="portfolio-hover-content">
-                                            <a href="https://youtu.be/gbEWSo145eI">
-                                                <h5>YouTube Demo</h5>
+                                            <a target="_blank" href="https://youtu.be/gbEWSo145eI">
+                                                <h5 class="link">YouTube Demo</h5>
                                             </a>
-                                            <a href="https://github.com/pmactavish13/bamazon">
-                                                <h5>GitHub Repo</h5>
+                                            <a target="_blank" href="https://github.com/pmactavish13/bamazon">
+                                                <h5 class="link">GitHub Repo</h5>
                                             </a>
                                         </div>
                                     </div>
                                     <img src="assets/images/bamazon.jpg" class="img-fluid sample" alt="Bamazon">
                                 </div>
                                 <div class="portfolio-caption">
-                                    <h3>Bamazon</h3>
+                                    <h4>Bamazon - Node</h4>
                                 </div>
                             </div>
 
                             <div class="col-md-3 work portfolio-item">
                                 <div class="portfolio-link" data-toggle="modal">
                                     <div class="portfolio-hover" style="border: solid 2px rgba(50, 139, 247)">
+                                        <p class="tools">Constructor Functions / Inquirer
+                                            <br>NPM random-words</p>
                                         <div class="portfolio-hover-content">
-                                            <a href="https://youtu.be/UWQWqVg4PYI">
-                                                <h5>YouTube Demo</h5>
+                                            <a target="_blank" href="https://youtu.be/UWQWqVg4PYI">
+                                                <h5 class="link">YouTube Demo</h5>
                                             </a>
-                                            <a href="https://github.com/pmactavish13/word-guess-node">
-                                                <h5>GitHub Repo</h5>
+                                            <a target="_blank" href="https://github.com/pmactavish13/word-guess-node">
+                                                <h5 class="link">GitHub Repo</h5>
                                             </a>
                                         </div>
                                     </div>
                                     <img src="assets/images/wordGuessNode.jpg" class="img-fluid sample" alt="Word Guess - Node">
                                 </div>
                                 <div class="portfolio-caption">
-                                    <h3>Word Guess - Node</h3>
+                                    <h4>Word Guess - Node</h4>
                                 </div>
                             </div>
 
                             <div class="col-md-3 work portfolio-item">
                                 <div class="portfolio-link" data-toggle="modal">
                                     <div class="portfolio-hover" style="border: solid 2px rgba(50, 139, 247)">
+                                        <p class="tools">HTML / Bootstrap 3 / CSS
+                                            <br>Javascript</p>
                                         <div class="portfolio-hover-content">
-                                            <a href="https://pmactavish13.github.io/TriviaGame/">
-                                                <h5>Deployed App</h5>
+                                            <a target="_blank" href="https://pmactavish13.github.io/TriviaGame/">
+                                                <h5 class="link">Deployed App</h5>
                                             </a>
-                                            <a href="https://github.com/pmactavish13/TriviaGame">
-                                                <h5>GitHub Repo</h5>
+                                            <a target="_blank" href="https://github.com/pmactavish13/TriviaGame">
+                                                <h5 class="link">GitHub Repo</h5>
                                             </a>
                                         </div>
                                     </div>
                                     <img src="assets/images/triviaBackground.jpg" class="img-fluid sample" alt="Trivia Game">
                                 </div>
                                 <div class="portfolio-caption">
-                                    <h3>Trivia Game</h3>
+                                    <h4>Trivia Game</h4>
                                 </div>
                             </div>
 
                             <div class="col-md-3 work portfolio-item">
                                 <div class="portfolio-link" data-toggle="modal">
                                     <div class="portfolio-hover" style="border: solid 2px rgba(50, 139, 247)">
+                                        <p class="tools">Firebase / API's / Bootstrap 4
+                                            <br>Slick Slider / Javascript</p>
                                         <div class="portfolio-hover-content">
-                                            <a href="https://pmactavish13.github.io/bigLsCrew-Travel/">
-                                                <h5>Deployed App</h5>
+                                            <a target="_blank" href="https://pmactavish13.github.io/bigLsCrew-Travel/">
+                                                <h5 class="link">Deployed App</h5>
                                             </a>
-                                            <a href="https://github.com/pmactavish13/bigLsCrew-Travel/">
-                                                <h5>GitHub Repo</h5>
+                                            <a target="_blank" href="https://github.com/pmactavish13/bigLsCrew-Travel/">
+                                                <h5 class="link">GitHub Repo</h5>
                                             </a>
                                         </div>
                                     </div>
                                     <img src="assets/images/practicalTravel.jpg" class="img-fluid sample" alt="Practical Travel">
                                 </div>
                                 <div class="portfolio-caption">
-                                    <h3>Practical Travel</h3>
+                                    <h4>Practical Travel</h4>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="row portfolio-row">
+                            <div class="col-md-3 work portfolio-item">
+                                <div class="portfolio-link" data-toggle="modal">
+                                    <div class="portfolio-hover" style="border: solid 2px rgba(50, 139, 247)">
+                                        <p class="tools">API's / Node.js </p>
+                                        <div class="portfolio-hover-content">
+                                            <a target="_blank" href="https://youtu.be/RBazTywJl4g">
+                                                <h5 class="link">YouTube Demo</h5>
+                                            </a>
+                                            <a target="_blank" href="https://github.com/pmactavish13/liri-node-app">
+                                                <h5 class="link">GitHub Repo</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <img src="assets/images/liriNode.jpg" class="img-fluid sample" alt="LIRI Node">
+                                </div>
+                                <div class="portfolio-caption">
+                                    <h4>LIRI - Node</h4>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 work portfolio-item">
+                                <div class="portfolio-link" data-toggle="modal">
+                                    <div class="portfolio-hover" style="border: solid 2px rgba(50, 139, 247)">
+                                        <p class="tools">Express / Handlebars / Path
+                                            <br>HTML / Bootstrap 4 / CSS</p>
+                                        <div class="portfolio-hover-content">
+                                            <a target="_blank" href="https://agile-caverns-73008.herokuapp.com/">
+                                                <h5 class="link">Deployed App</h5>
+                                            </a>
+                                            <a target="_blank" href="https://github.com/pmactavish13/phillyDogSpot">
+                                                <h5 class="link">GitHub Repo</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <img src="assets/images/dogGroomed.jpeg" class="img-fluid sample" alt="phillydogspot">
+                                </div>
+                                <div class="portfolio-caption">
+                                    <h4>phillydogspot</h4>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 work portfolio-item">
+                                <div class="portfolio-link" data-toggle="modal">
+                                    <div class="portfolio-hover" style="border: solid 2px rgba(50, 139, 247)">
+                                        <p class="tools">Giphy API / HTML / Bootstrap 3
+                                            <br>Javascript</p>
+                                        <div class="portfolio-hover-content">
+                                            <a target="_blank" href="https://pmactavish13.github.io/Giphy-API/">
+                                                <h5 class="link">Deployed App</h5>
+                                            </a>
+                                            <a target="_blank" href="https://github.com/pmactavish13/Giphy-API">
+                                                <h5 class="link">GitHub Repo</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <img src="assets/images/dog.jpeg" class="img-fluid sample" alt="Giphy API">
+                                </div>
+                                <div class="portfolio-caption">
+                                    <h4>Giphy API</h4>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 work portfolio-item">
+                                <div class="portfolio-link" data-toggle="modal">
+                                    <div class="portfolio-hover" style="border: solid 2px rgba(50, 139, 247)">
+                                        <p class="tools">HTML / Bootstrap 3 / Javascript</p>
+                                        <div class="portfolio-hover-content">
+                                            <a target="_blank" href="https://pmactavish13.github.io/week-4-game/">
+                                                <h5 class="link">Deployed App</h5>
+                                            </a>
+                                            <a target="_blank" href="https://github.com/pmactavish13/week-4-game">
+                                                <h5 class="link">GitHub Repo</h5>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <img src="assets/images/crystals-4.jpeg" class="img-fluid sample" alt="Cryatals Game">
+                                </div>
+                                <div class="portfolio-caption">
+                                    <h4>Cryatals Game</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-1"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Content-->
+        <div class="container-fluid" id="contact">
+            <div class="container-fluid" id="contentWrapper">
+                <header>
+                    <h3>Contact</h3>
+                </header>
+
+                <div class="contactContent">
+                    <div class="row">
+                        <div class="col-md-3"></div>
+                        <div class="col-md-3" id="icons">
+                            <div class="row">
+                                <a target="_blank" href="https://www.linkedin.com/in/paula-mactavish-b14423156/">
+                                    <img src="assets/images/linkedIn.png" class="icon" alt="Linked-In"> Linked-In
+                                </a>
+                            </div>
+                            <div class="row">
+                                <a target="_blank" href="https://github.com/pmactavish13">
+                                    <img src="assets/images/gitHub.png" class="icon" alt="GitHub"> GitHub
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-3" id="emailMe">
+                            <p class="emailText"><i class="far fa-envelope"></i>
+                            <br>
+                            pmactavish13@gmail.com
+                            </p>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                    <div>
+                        <h2 class="contactText">I would love to hear from you!</h2>
                     </div>
                 </div>
             </div>
         </div>
 
 
-        <div class="container" id="about">
-            <header>
-                <h4>About</h4>
-            </header>
-            <!-- main content body-->
-            <div class="content">
-                <p></p>
-            </div>
-        </div>
-
-        <div class="container" id="contact">
-            <header>
-                <h4>Contact</h4>
-            </header>
-            <!-- main content body-->
-            <div class="content">
-
-                <!-- <h3>&#160 &#160 For more work
-                    <a href="https://www.facebook.com/">
-                        <img src="assets/images/facebook.png" class="auth-image" alt="Facebook">
-                    </a>
-                </h3>
-
-                <p>!</p> -->
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div>
+        <!-- Footer -->
+        <footer>
             <div>
-                <h6 class="copyright">Copyright &copy; Paula Mactavish 2018</h6>
+                <div>
+                    <h6 class="copyright">Copyright &copy; Paula MacTavish 2018</h6>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </section>
 </body>
 
 </html>

@@ -12,6 +12,10 @@ body{
     text-align: center;
 }
 
+#myLogo {
+    max-width: 60px;
+}
+
 .BeforeScroll{
     color: rgb(15, 15, 19);
     display: none;
@@ -39,7 +43,7 @@ nav {
 header.masthead{
     margin-top: -4%;
     text-align: center;
-    color: rgb(3, 4, 28);
+    color: rgb(15, 15, 19);
     background-image: url("../images/dreamstime2.jpg");
     background-position: center;
     background-repeat: no-repeat; 
@@ -57,9 +61,20 @@ header.masthead{
     text-align: center;
     width: 80%;
     margin-bottom: 14%;
-    font-size: 40px;
-    line-height: 40px;
   }
+
+h1 {
+    font-size: 35px
+} 
+
+h2 {
+    font-size: 28px
+}
+
+h2.contactText {
+    margin-top: 20px;
+    font-size: 25px;
+}
 
 @media (min-width: 768px) {
     header.masthead .intro-text {
@@ -68,27 +83,34 @@ header.masthead{
    }
  }
 
-/* @media (max-width: 995px) {
-    h1 { font-size: 2rem; }
-    h2 { font-size: 1.5rem; }
-    .banner {top:45%}
+ h3 {
+    margin-top: 30px;
+    padding: 15px;
+    font-size: 45px;
 }
 
-@media (max-width: 810px) {
-    h1 { font-size: 1.5rem; }
-    h2 { font-size: 1rem; }
-    .banner {top:35%}
+
+h4 {
+    font-size: 19px;
+    font-weight: 100;
+    color:whitesmoke;
+    background-color: rgb(3, 4, 28);
+    border: solid 1px rgb(3, 4, 28);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding-bottom: 4px;
+    padding-top: 4px;
 }
 
-@media (max-width: 600px) {
-    .banner {top:1%};
-    .banner {margin-top:-20%};
-} */
+h5 {
+    color: rgb(15, 15, 19); 
+  }
 
-/* @media (max-width: 540px) {
-    h1 { font-size: 1.5rem; }
-    h2 { font-size: 1rem; }
-} */
+p.me-text {
+    font-size: 20px;
+    text-align: left;
+}  
+  
 section {
     text-align: center;
     color: rgb(3, 4, 28);
@@ -104,22 +126,23 @@ section {
     background-size: cover;
 }
 
-h4 {
-    margin-top: 30px;
-    padding: 10px;
-    font-size: 45px;
+#about, #portfolio, #contact {
+    margin-top: 4%;
 }
 
-h3 {
-    font-size: 19px;
-    font-weight: 100;
-    color:whitesmoke;
-    background-color: rgb(3, 4, 28);
-    border: solid 1px rgb(3, 4, 28);
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    padding-bottom: 4px;
-    padding-top: 4px;
+#about-image {
+    background-image: url("../images/strongGir1.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: contain, auto;
+    background-size :no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top: 8px;
+    margin-bottom: 25px;
+    border: solid 2px rgb(15, 15, 19)
 }
 
 .work img {
@@ -132,15 +155,30 @@ h3 {
     margin-top: 10px;
 }
 
+.portfolio-row {
+    margin-bottom: 20px
+}
+
+.portfolio-hover-content {
+    margin-top: 5px !important;
+}
+
+.tools {
+    color:rgb(15, 15, 19);
+    font-size: 16px;
+    margin-top: 20px;
+    
+}
+
 #portfolio .portfolio-item .portfolio-link {
     position: relative;
     display: block;
-    max-width: 400px;
+    /* max-width: 400px; */
     margin: 0 auto;
     cursor: pointer;
-  }
+}
   
-  #portfolio .portfolio-item .portfolio-link .portfolio-hover {
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
     position: absolute;
     width: 100%;
     height:160px;
@@ -152,67 +190,102 @@ h3 {
     border-top-right-radius: 3px;
     background: rgba(50, 139, 247, 0.9);
     margin-top: 10px;
-  }
+}
   
-  #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
     opacity: 1;
-  }
+}
 
-  h5 {
-    color: whitesmoke; 
-  }
-  
-  #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
     font-size: 20px;
     position: absolute;
     top: 50%;
     width: 100%;
-    /* height:20px; */
-    /* margin-top: -12px; */
-    /* text-align: center; */
     color: whitesmoke;
-  }
+}
   
-  #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
     margin-top: -12px;
-  }
+}
   
-  #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3 {
-  /* #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4  */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3 {
     margin: 0;
-  }
+}
   
-  /* #portfolio .portfolio-item .portfolio-caption { */
-    /* max-width: 400px;
-    margin: 0 auto;
-    padding: 25px; */
-    /* text-align: center; */
-    /* background-color: rgb(3, 4, 28); */
-  /* } */
-  
-  #portfolio .portfolio-item .portfolio-caption h4 {
+#portfolio .portfolio-item .portfolio-caption h4 {
     margin: 0;
     text-transform: none;
-  }
+}
   
-  #portfolio .portfolio-item .portfolio-caption p {
+#portfolio .portfolio-item .portfolio-caption p {
     font-size: 16px;
     font-style: italic;
     margin: 0;
-    /* font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
-  }
+}
   
-  #portfolio * {
+#portfolio * {
     z-index: 2;
-  }
+}
 
-.auth-image {
-    size: 100%;
-    width: 250px;
-    height: 200px;
-    margin-top: 10px;
-    float: left;
-    margin-right: 25px;
+#contact {
+    background-image: url("../images/blueSea2.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: contain, auto;
+    background-size :no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+#contentWrapper {
+    background-image: url("../images/white_sands.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: contain, auto;
+    background-size :no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 20px;
+}
+
+.contactContent {
+    color: rgb(15, 15, 19); 
+    margin-bottom: 50px;
+}
+
+.icon {
+    transition: transform .2s;
+    width: 55px;
+    height: 55px;
+    margin: 0 auto;
+    padding: 8px;
+    position: relative;
+}
+
+.link {
+    transition: transform .2s;  
+}
+
+.icon:hover, .link:hover {
+    transform: scale(1.2);
+}
+
+p.emailText {
+     text-align: right;
+     padding-top: 2px;
+     line-height: 45px;
+     font-size:17px;
+}
+.far {
+    color:  rgba(32, 101, 186, 0.9);
+    font-size: 45px;
 }
 
 footer,h6 {
@@ -223,5 +296,4 @@ footer,h6 {
     margin-bottom: none 0;
     padding-top: 10px;
     padding-bottom: 10px;
-
-  }
+}
