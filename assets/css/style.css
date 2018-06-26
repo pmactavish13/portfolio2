@@ -174,7 +174,6 @@ section {
 #portfolio .portfolio-item .portfolio-link {
     position: relative;
     display: block;
-    /* max-width: 400px; */
     margin: 0 auto;
     cursor: pointer;
 }
@@ -230,16 +229,6 @@ section {
 
 #contact {
     background-color: whitesmoke;
-
-    /* background-image: url("../images/blueSea2.jpg");
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: contain, auto;
-    background-size :no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;  */
     padding-top: 25px;
     padding-bottom: 25px;
     margin-bottom: 70px;
@@ -247,19 +236,6 @@ section {
     border-bottom: solid 1px rgb(15, 15, 19) */
     box-shadow: 3px 1px 12px rgb(0,0,0,0.8);
 }
-
-/* #contentWrapper {
-    background-image: url("../images/white_sands.jpg");
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: contain, auto;
-    background-size :no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    padding: 20px;
-} */
 
 .contactContent {
     color: rgb(15, 15, 19); 
